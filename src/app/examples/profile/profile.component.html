@@ -1,84 +1,103 @@
 <div class="wrapper">
-    <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/fabio-mangione.jpg');">
+    <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/sell-car.jpg');">
         <div class="filter"></div>
     </div>
-    <div class="section profile-content">
-        <div class="container">
-            <div class="owner">
-                <div class="avatar">
-                    <img src="./assets/img/faces/joe-gardner-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                </div>
-                <div class="name">
-                    <h4 class="title">Jane Faker<br /></h4>
-                    <h6 class="description">Music Producer</h6>
+    <div class="container-seller-car row">
+        <div class="row col-md-12 justify-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span>Nombre</span>
+                    <input type="text" class="form-control" placeholder="Default">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 ml-auto mr-auto text-center">
-                    <p>An artist of considerable range, Jane Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
-                    <br />
-                    <button class="btn btn-outline-default btn-round"><i class="fa fa-cog"></i> Settings</button>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span>Apellido</span>
+                    <input type="text" class="form-control" placeholder="Default">
                 </div>
             </div>
-            <br/>
-            <div class="nav-tabs-navigation">
-                <div class="nav-tabs-wrapper">
-                    <ngb-tabset [justify]="'center'">
-                        <ngb-tab title="Follows">
-                            <ng-template ngbTabContent >
-                                <div class="row following" id="follows">
-                                    <div class="col-md-6 ml-auto mr-auto">
-                                        <ul class="list-unstyled follows">
-                                            <li>
-                                                <div class="row">
-                                                    <div class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                    </div>
-                                                    <div class="col-md-7 col-sm-4 ml-auto">
-                                                        <h6>Flume<br/><small>Musical Producer</small></h6>
-                                                    </div>
-                                                    <div class="col-md-3 col-sm-2 ml-auto mr-auto">
-                                                        <div class="form-check">
-                                                          <label class="form-check-label">
-                                                            <input class="form-check-input" type="checkbox" value="" checked="">
-                                                            <span class="form-check-sign"></span>
-                                                          </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <hr />
-                                            <li>
-                                                <div class="row">
-                                                    <div class="col-md-2 col-sm-2 ml-auto mr-auto">
-                                                        <img src="./assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                                                    </div>
-                                                    <div class="col-md-7 col-sm-4 ml-auto">
-                                                        <h6>Banks<br /><small>Singer</small></h6>
-                                                    </div>
-                                                    <div class="col-md-3 col-sm-2 ml-auto mr-auto">
-                                                        <div class="form-check">
-                                                          <label class="form-check-label">
-                                                            <input class="form-check-input" type="checkbox" value="" checked="">
-                                                            <span class="form-check-sign"></span>
-                                                          </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </ng-template>
-                        </ngb-tab>
-                        <ngb-tab title="Following">
-                            <ng-template ngbTabContent>
-                                <h3 class="text-muted">Not following anyone yet :(</h3>
-                                <br>
-                                <button class="btn btn-warning btn-round">Find artists</button>
-                            </ng-template>
-                        </ngb-tab>
-                    </ngb-tabset>
+        </div>
+
+        <div class="row col-md-12 justify-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span>Teléfono</span>
+                    <input type="text" class="form-control" placeholder="Default">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span>Email</span>
+                    <input type="text" class="form-control" placeholder="Default">
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-md-12 justify-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span>Marca</span>
+                    <input type="text" class="form-control" placeholder="Default">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span>Modelo</span>
+                    <input type="text" class="form-control" placeholder="Default">
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-md-12 justify-center">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span>Versión</span>
+                    <input type="text" class="form-control" placeholder="Default">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <span>Año</span>
+                    <input type="text" class="form-control" placeholder="Default">
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-md-12 justify-center">
+            <div class="col-md-4">
+                <span>Cantidad de puertas</span>
+                <div ngbDropdown class="d-inline-block dropdown">
+                    <a class="toggle-custom" id="dropdownBasic1" ngbDropdownToggle>{{selectedFuel ?? 'Seleccione'}}</a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                        <a class="dropdown-header">Seleccione cantidad de puertas</a>
+                        <a class="dropdown-item">2 puertas</a>
+                        <a class="dropdown-item">3 puertas</a>
+                        <a class="dropdown-item">4 puertas</a>
+                        <a class="dropdown-item">5 puertas</a>
+                        <a class="dropdown-item">Mas de 5 puertas</a>
+                        <!-- <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">Separated link</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">Another separated link</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <span>Combustible</span>
+                <div ngbDropdown class="d-inline-block dropdown">
+                    <a class="toggle-custom" id="dropdownBasic1" ngbDropdownToggle>{{selectedFuel?.name ?? 'Seleccione'}}</a>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                        <a class="dropdown-header">Seleccione combustible</a>
+                        <ng-container *ngFor="let fuel of fuels; let i = index">
+                            <a class="dropdown-item" (click)="handleSelectedFuel(fuel)">{{fuel.name}}</a>
+                        </ng-container>
+                        
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,27 @@
+.container-seller-car{
+    padding: 25px;
+}
+.justify-center{
+    justify-content: center;
+}
+.section-dropdown{
+    align-self: center;
+    text-align: center;
+}
+.dropdown-toggle{
+    width: 100%;
+}
+.dropdown{
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    height: 40px;
+    cursor: pointer;
+}
+.toggle-custom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
