@@ -71,14 +71,12 @@
             <div class="col-md-4">
                 <span>Cantidad de puertas</span>
                 <div ngbDropdown class="d-inline-block dropdown">
-                    <a class="toggle-custom" id="dropdownBasic1" ngbDropdownToggle>{{selectedFuel ?? 'Seleccione'}}</a>
+                    <a class="toggle-custom" id="dropdownBasic1" ngbDropdownToggle>{{selectedQuantityDoor?.name ?? 'Seleccione'}}</a>
                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
                         <a class="dropdown-header">Seleccione cantidad de puertas</a>
-                        <a class="dropdown-item">2 puertas</a>
-                        <a class="dropdown-item">3 puertas</a>
-                        <a class="dropdown-item">4 puertas</a>
-                        <a class="dropdown-item">5 puertas</a>
-                        <a class="dropdown-item">Mas de 5 puertas</a>
+                        <ng-container *ngFor="let door of doors; let i = index">
+                            <a class="dropdown-item" (click)="handleSelectedQuantityDoor(door)">{{door.name}}</a>
+                        </ng-container>
                         <!-- <div class="dropdown-divider"></div>
                         <a class="dropdown-item">Separated link</a>
                         <div class="dropdown-divider"></div>
@@ -92,7 +90,7 @@
                 <div ngbDropdown class="d-inline-block dropdown">
                     <a class="toggle-custom" id="dropdownBasic1" ngbDropdownToggle>{{selectedFuel?.name ?? 'Seleccione'}}</a>
                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
-                        <a class="dropdown-header">Seleccione combustible</a>
+                        <a class="dropdown-header">Seleccione un combustible</a>
                         <ng-container *ngFor="let fuel of fuels; let i = index">
                             <a class="dropdown-item" (click)="handleSelectedFuel(fuel)">{{fuel.name}}</a>
                         </ng-container>

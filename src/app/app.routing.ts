@@ -2,15 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
-import { ProfileComponent } from './examples/profile/profile.component';
-import { SignupComponent } from './examples/signup/signup.component';
-import { LandingComponent } from './examples/landing/landing.component';
+import { LandingComponent } from './components/landing/landing.component';
+import { SellerCarComponent } from './components/seller-car/seller-car.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home',             component: LandingComponent },
-    { path: 'sell-car',     component: ProfileComponent },
-    { path: 'signup',           component: SignupComponent },
+    { path: 'sell-car',     component: SellerCarComponent },
 ];
 
 @NgModule({
