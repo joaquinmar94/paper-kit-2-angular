@@ -14,7 +14,7 @@ import { ComponentsModule } from './components/components.module';
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

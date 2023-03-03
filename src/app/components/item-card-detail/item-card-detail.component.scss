@@ -1,0 +1,47 @@
+.container-item{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    &:hover{
+        transform: translateY(-5px);
+    }
+}
+.title-car{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.section-img{
+    width: 100%;
+    height: 60%;
+    content: url('http://i2.wp.com/cdn.inaxiom.net/web/wp-content/uploads/2007/12/fiat-palio-2008-03.jpg?w=1000');
+}
+.center{
+    justify-content: center;
+}
+.section-detail-car{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;;
+    .detail{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
+    }
+}
+.section-price{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    height: 100%;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}

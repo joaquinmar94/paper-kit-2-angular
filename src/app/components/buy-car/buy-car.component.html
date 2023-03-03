@@ -1,0 +1,93 @@
+<div class="wrapper">
+    <div class="page-header page-header-xs" data-parallax="true" style="background-image: url('./assets/img/sell-car.jpg');">
+        <div class="filter"></div>
+    </div>
+    <div class="container-seller-car">
+        <div class="section-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="col-md-10">
+                <input type="text" class="form-control" placeholder="Búsqueda"/>
+            </div>
+        </div>
+        <!-- <div class="col-md-3 section-filter">
+            <nav _ngcontent-c5="" class="navbar navbar-full-width form-group bg-primary">
+                <span>Filtros</span>
+            </nav>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <span>Búsqueda</span>
+                    <input type="text" class="form-control input-sm" placeholder="Ej: Renault">
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <span>Rango de precio</span>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+                                </div>
+                                <input type="text" placeholder="Ej: 100.000" class="form-control input-sm" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <span>a</span>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+                                </div>
+                                <input type="text" class="form-control input-sm" placeholder="Ej: 500.000" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <span>Rango de modelo</span>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <input type="text" class="form-control input-sm" placeholder="Ej: 2006">
+                        </div>
+                        <div class="col-md-2">
+                            <span>a</span>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control input-sm" placeholder="Ej: 2023">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <span>Combustible</span>
+                    <div ngbDropdown class="d-inline-block dropdown input-sm">
+                        <a class="toggle-custom" id="dropdownBasic1" ngbDropdownToggle>{{selectedFuel?.name ?? 'Seleccione'}}</a>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                            <a class="dropdown-header">Seleccione un combustible</a>
+                            <ng-container *ngFor="let fuel of fuels; let i = index">
+                                <a class="dropdown-item" (click)="handleSelectedFuel(fuel)">{{fuel.name}}</a>
+                            </ng-container>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="section-list">
+            <ng-container *ngFor="let item of items; let i = index">
+                <div class="form-group">
+                    <app-item-card-detail [item]="item"></app-item-card-detail>
+                </div>
+            </ng-container>
+        </div>
+        
+    </div>
+</div>

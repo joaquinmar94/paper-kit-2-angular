@@ -6,6 +6,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingComponent } from './landing/landing.component';
 import { RouterModule } from '@angular/router';
 import { SellerCarComponent } from './seller-car/seller-car.component';
+import { BuyCarComponent } from './buy-car/buy-car.component';
+import { ItemCardDetailComponent } from './item-card-detail/item-card-detail.component';
 
 @NgModule({
     imports: [
@@ -17,7 +19,9 @@ import { SellerCarComponent } from './seller-car/seller-car.component';
     declarations: [
         LandingComponent,
         SellerCarComponent,
-        SellerCarComponent
+        SellerCarComponent,
+        BuyCarComponent,
+        ItemCardDetailComponent
     ]
 })
 export class ComponentsModule { }

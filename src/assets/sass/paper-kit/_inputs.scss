@@ -77,6 +77,11 @@
     padding: $padding-large-vertical $padding-large-horizontal;
 }
 
+.input-sm{
+    height: 27px !important;
+    padding: $padding-large-vertical 3px !important;
+}
+
 .has-error{
     .form-control-feedback, .control-label{
         color: $danger-color;
@@ -153,8 +158,11 @@ textarea.form-control{
   }
   .input-group-prepend .input-group-text{
     margin-right: 0;
-    background: transparent;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #c1c1c1;
     border: 1px solid #DDDDDD;
+    height: 27px !important;
     @include transition(300ms, linear);
   }
   &.input-group-focus {
